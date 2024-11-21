@@ -1,0 +1,316 @@
+<!doctype html>
+<html class="no-js" lang="HU-hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sivatagi játékok - Jelentkezés</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <script src="../js/stickyNav.js"></script>
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="icon" type="image/x-icon" href="../img/logoIco.ico">
+    <meta name="description" content="Jelentkezés a versenyre">
+</head>
+<body>
+<div class="custom-background">
+    <header>
+        <div class="fejléc">
+            <img id="logo" src="/img/logo.png" alt="Az első sivatagi játékok logója">
+            <h1>Sivatagi Játékok</h1>
+            <nav>
+                <a href="../index.html">Főoldal</a>
+                <a href="" class="active">Jelentkezés</a>
+                <a href="SzabalyzatPalyak.html">Szabályzat - Pályák</a>
+                <a href="VersenyzokHirek.html">Versenyzők - Hírek</a>
+                <a href="Program.html">Program</a>
+                <a href="Tortenet.html">Történet</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <h1 class="main-title">Jelentkezés a versenyre</h1>
+        <p class="main-quote">Csatlakozz a kihíváshoz, és mutasd meg, mit tudsz!</p>
+        <div class="depth">
+            <div class="quote-container">
+                <q class="quote">Ne hagyd ki a lehetőséget, hogy a legjobbakkal versenyezz! Csatlakozz hozzánk, és mutasd meg, hogy te vagy a következő bajnok!</q>
+            </div>
+        </div>
+        <div class="depth" id="jelentkezes">
+            <form action="/submit" method="POST" id="registration-form">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="birthdate">Születési dátum:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="email">Elérhetőség (Email):</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="jelentkezes-tipus">Jelentkezés típusa:</label>
+                <select id="jelentkezes-tipus" name="jelentkezes-tipus" onchange="showTeamNameField()">
+                    <option value="egyeni">Egyéni</option>
+                    <option value="csapatos">Csapatos</option>
+                </select>
+
+                <div id="csapat-neve" style="display:none;">
+                    <label for="csapat-nev">Csapat neve:</label>
+                    <input type="text" id="csapat-nev" name="csapat-nev" placeholder="Add meg a csapat nevét">
+                </div>
+
+                <label for="experience">Milyen tapasztalatokkal rendelkezik?</label>
+                <textarea id="experience" name="experience"></textarea>
+
+                <label for="how-heard">Hogyan hallott a versenyről?</label>
+                <select id="how-heard" name="how-heard">
+                    <option value="website">Weboldal</option>
+                    <option value="friends">Barátok</option>
+                    <option value="social-media">Közösségi média</option>
+                </select>
+
+                <label for="motivation">Motiváció (Miért jelentkezett?):</label>
+                <textarea id="motivation" name="motivation" required></textarea>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required> Elfogadom a verseny feltételeit és szabályait
+                    </label>
+                </div>
+
+                <button type="submit">Jelentkezem</button>
+            </form>
+        </div>
+        <div id="message">
+            Sikeres jelentkezés!
+        </div>
+
+        <div class="depth">
+            <div class="brighten">
+                <h3>Határidő</h3>
+                <p>Ne maradj le! Jelentkezési határidő: 2024. december 1.</p>
+            </div>
+        </div>
+
+        <div class="depth">
+            <div class="brighten">
+                <h4>Díj és nevezési költség</h4>
+                <p>A nevezési díj 50 EUR. Kérjük, hogy az összeget a verseny honlapján található utasítások szerint fizesse be.</p>
+            </div>
+            <div class="brighten">
+                <h4>Regisztráció</h4>
+                <p>A versenyzőknek először regisztrálniuk kell a verseny hivatalos weboldalán.</p>
+                <p>A regisztrációs űrlapon meg kell adniuk az alapvető információkat (név, életkor, csapat neve [ha van], elérhetőség, stb.).</p>
+                <p>A regisztráció során a versenyzők el kell fogadniuk a versenyszabályokat és a felelősségvállalási nyilatkozatot.</p>
+            </div>
+            <div class="brighten">
+                <h4>Regisztrációs díj meghatározása</h4>
+                <p>A versenyzőknek ki kell választaniuk, hogy egyéni vagy csapatversenyben szeretnének részt venni.</p>
+                <p>A regisztrációs díj az egyéni vagy csapat kategóriától függően változik.</p>
+                <p>Az árakról és a befizetési lehetőségekről tájékoztatást kapnak a regisztrációs oldal után.</p>
+            </div>
+            <div class="brighten">
+                <h4>Befizetés módja</h4>
+                <p><strong>Banki átutalás:</strong> A versenyzőknek átutalással kell kifizetniük a regisztrációs díjat a megadott számlaszámra.</p>
+                <p><strong>Online bankkártyás fizetés:</strong> A versenyzők közvetlenül a weboldalon keresztül bankkártyával is fizethetnek, ha ez az opció elérhető.</p>
+                <p><strong>PayPal vagy más online szolgáltatás:</strong> A versenyzők választhatják ezt a kényelmes online lehetőséget is, ha a weboldalon elérhető.</p>
+
+            </div>
+            <div class="brighten">
+                <h4>Fizetési határidő</h4>
+                <p>A regisztráció után a befizetési határidőt egyértelműen meg kell adni.</p>
+                <p>A befizetés határidejét nem lehet túllépni, és a regisztráció csak a befizetés visszaigazolása után válik véglegessé.</p>
+                <p>Ha a versenyző nem fizeti be időben a díjat, a helyét a következő jelentkező vehetik át.</p>
+            </div>
+            <div class="brighten">
+                <h4>Fizetési visszaigazolás</h4>
+                <p>A befizetés után a versenyzők automatikusan kapnak egy visszaigazolást emailben, amely tartalmazza a fizetés részleteit (pl. tranzakciós szám, dátum).</p>
+                <p>A visszaigazolást a verseny szervezői is ellenőrzik, és véglegesen megerősítik a versenyző részvételét.</p>
+            </div>
+            <div class="brighten">
+                <h4>Késedelmes befizetés</h4>
+                <p>Amennyiben a versenyző a befizetési határidőt követően fizet, egy késedelmi díjat kell fizetnie, ha a verseny szabályzata így rendelkezik.</p>
+                <p>A késedelmes befizetés előtt a versenyzőknek előzetes értesítést kell kapniuk, hogy elkerüljék a részvétel elutasítását.</p>
+            </div>
+            <div class="brighten">
+                <h4>Számlázás (ha szükséges)</h4>
+                <p>Ha a versenyző kér számlát a regisztrációs díjról, a számlát a befizetés után automatikusan kiállítják a versenytől.</p>
+                <p>A számla kérése az regisztrációs felületen jelezhető.</p>
+            </div>
+            <div class="brighten">
+                <h4>Jelentkezési határidő</h4>
+                <p>A versenyzőknek tisztában kell lenniük a végső jelentkezési határidővel.</p>
+                <p>A jelentkezést követően a versenyzők nem módosíthatják az adatokat vagy a csapatot a rendszerben.</p>
+            </div>
+            <div class="brighten">
+                <h4>Befizetés megerősítése</h4>
+                <p>Miután a befizetés megtörtént, és a tranzakciót a szervezők megerősítették, a versenyző véglegesen regisztrálva lesz a versenyre, és a részvételi díjat nem lehet visszatéríteni, hacsak a szabályzat másképp nem rendelkezik.</p>
+            </div>
+        </div>
+        <div class="depth">
+            <h3>Szabályok</h3>
+            <ol>
+                <li class="brighten">
+                    <h4>Általános információk</h4>
+                    <p>A verseny minden 16 év feletti résztvevő számára nyitott. A fiatalabb versenyzők szülői engedéllyel vehetnek részt.</p>
+                    <p>A verseny célja, hogy tesztelje a résztvevők fizikai, szellemi és csapatmunkára való képességét egy sor különböző sportágban és kihívásban.</p>
+                    <p>A verseny egyéni és csapatkategóriában is zajlik. A csapatoknak legalább 3 főből kell állniuk, de maximum 5 fős csapatok is részt vehetnek.</p>
+                    <p>Minden résztvevőnek kötelessége regisztrálni a versenyt megelőzően, és az előzetes szabályokat elfogadni.</p>
+                </li>
+                <li class="brighten">
+                    <h4>A verseny szerkezete</h4>
+                    <p><strong>Versenykategóriák:</strong></p>
+                    <ul>
+                        <li>Egyéni verseny</li>
+                        <li>Csapatverseny</li>
+                    </ul>
+                    <p><strong>Versenytípusok:</strong></p>
+                    <ul>
+                        <li>Különböző sportágakban való versenyzés (pl. futás, mászás, kerékpározás, úszás, stb.).</li>
+                        <li>Az egyes sportágak teljesítéséhez egy meghatározott időkeret áll rendelkezésre.</li>
+                    </ul>
+                    <p><strong>Időmérés:</strong> A versenyt egyénileg vagy csapatonként időmérés alapján értékeljük. Minden versenyzőnek vagy csapatnak megadott időkerete lesz a pálya teljesítésére.</p>
+                </li>
+                <li class="brighten">
+                    <h4>Versenyen való részvétel feltételei</h4>
+                    <ul>
+                        <li>Minden jelentkezőnek igazolnia kell személyazonosságát a helyszínen, és alá kell írnia egy felelősségvállalási nyilatkozatot, amelyben elismeri, hogy a versenyen való részvétel saját felelősségére történik.</li>
+                        <li>Minden versenyzőnek biztosítunk egy minimális biztonsági felszerelést (sisak, térdvédők, stb.), de a versenyzőknek is biztosítaniuk kell saját védőfelszerelésüket, amennyiben szükséges.</li>
+                        <li>Minden versenyző számára kötelező a verseny előtti bemelegítés, amelyet a szervezők biztosítanak.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>A versenypálya és akadályok</h4>
+                    <ul>
+                        <li>A verseny pályája több szakaszból áll, amelyek különböző akadályokat tartalmaznak.</li>
+                        <li>A pályák nehézségi szintje fokozatosan emelkedik, és az egyes szakaszok között rövid pihenőidők vannak.</li>
+                        <li>A pályák tervezése során a biztonság kiemelt szempont, de minden versenyzőnek tisztában kell lennie a saját fizikai határaival.</li>
+                        <li>A versenypálya nehézsége és veszélyessége előre meghatározott, és a versenyzők ezt figyelembe kell vegyék a verseny során.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Tilos és megengedett magatartás</h4>
+                    <p><strong>Tilos:</strong></p>
+                    <ul>
+                        <li>A versenytársak akadályozása, szándékos kárt okozás vagy tisztességtelen magatartás.</li>
+                        <li>Bármilyen formájú csalás (pl. másolás, pályamódosítás, illegális eszközök használata).</li>
+                        <li>Az előírt pálya elhagyása, vagy bármilyen szabálytalan mozgás a verseny során.</li>
+                        <li>A verseny elhagyása a kijelölt pihenőidőn kívül.</li>
+                    </ul>
+                    <p><strong>Megengedett:</strong></p>
+                    <ul>
+                        <li>A versenyzők segíthetnek egymásnak, ha az nem befolyásolja a verseny tisztességét.</li>
+                        <li>Az egyéni versenyzők kérhetnek támogatást a csapatoktól a pályán kívül, de a verseny során a csapatok nem segíthetnek egymásnak.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Pontozás és eredmények</h4>
+                    <ul>
+                        <li>A versenyek pontozása a teljesítmény alapján történik, figyelembe véve az időt, a pontosságot, és az akadályok teljesítését.</li>
+                        <li>Minden versenyző és csapat számára előre meghatározott pontozási rendszer lesz érvényben.</li>
+                        <li>A legjobb idővel rendelkező versenyzők és csapatok külön díjazásban részesülnek, és az eredmények nyilvánosak lesznek a versenyt követően.</li>
+                        <li>Az eredményeket a verseny végén, a célba érkezés után a versenybírák ellenőrzik és véglegesen kiértékelik.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Díjazás</h4>
+                    <ul>
+                        <li>Az egyéni versenyek első három helyezettjei érmet és értékes nyereményeket kapnak.</li>
+                        <li>A csapatversenyt a legjobb csapatok díjazzák.</li>
+                        <li>A díjak között sporteszközök, ajándékutalványok, és más szponzori felajánlások találhatók.</li>
+                        <li>Az eredmények és díjak hivatalos kihirdetése a verseny utáni díjátadón történik.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Biztonság és egészségügyi előírások</h4>
+                    <ul>
+                        <li>A verseny helyszínén orvosi segítséget biztosítunk, és minden résztvevőnek elérhetőek a sürgősségi egészségügyi szolgáltatások.</li>
+                        <li>Minden versenyző köteles előre megismerkedni a verseny orvosi szabályaival és a balesetvédelmi intézkedésekkel.</li>
+                        <li>A verseny közben bármilyen sérülés, baleset esetén a versenyző azonnal jelezheti a szervezőknek, akik biztosítják a szükséges segítséget.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Jelentkezési és részvételi feltételek</h4>
+                    <ul>
+                        <li>A versenyre való jelentkezés nem garantálja automatikusan a részvételt, ha a jelentkezési határidő után már nincs szabad hely.</li>
+                        <li>A versenyzőknek kötelező a részvételi díjat a regisztráció után kifizetniük.</li>
+                        <li>A versenyekre való jelentkezés végleges, és lemondás vagy visszatérítés nem lehetséges a verseny előtt egy héttel.</li>
+                    </ul>
+                </li>
+                <li class="brighten">
+                    <h4>Szabályzat módosítása</h4>
+                    <p>A versenyszabályokat a szervezők fenntartják jogot arra, hogy bármikor módosítsák, ha szükséges, a biztonság és a verseny tisztasága érdekében. Bármely módosításról a résztvevőket előre értesítik.</p>
+                </li>
+            </ol>
+        </div>
+
+
+        <div class="depth">
+            <div class="quote-container">
+                <q class="quote">A legnagyobb kihívások hozzák a legjobb eredményeket. Készen állsz?</q>
+                <div class="cta-container">
+                    <a href="#jelentkezes" class="cta-button">Készen állsz? Jelentkezz most!</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="sponsors">
+        <h4>Fő Szponzorok</h4>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/RedBullEnergyDrink.svg" alt="Red Bull logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Adidas_2022_logo.svg" alt="Adidas logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" alt="Coca-Cola logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Pepsi_2023.svg" alt="Pepsi logó" class="sponsor-logo">
+        </div>
+    </div>
+    <div class="sponsors">
+        <h4>Arany Szponzorok</h4>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Toyota.svg" alt="Toyota logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Samsung_Black_icon.svg" alt="Samsung logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Heineken_logo.svg" alt="Heineken logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Budweiser_Anheuser-Busch_logo.svg" alt="Budweiser logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg" alt="Intel logó" class="sponsor-logo">
+        </div>
+    </div>
+    <div class="sponsors">
+        <h4>Ezüst/Bronz Szponzorok</h4>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Decathlon_Logo24.svg" alt="Decathlon logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/IIC_Banner_2022.svg" alt="Intersport logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg" alt="Starbucks logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" alt="Tesla logó" class="sponsor-logo">
+        </div>
+    </div>
+    <div class="sponsors">
+        <h4>Média Partnerek</h4>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/MTV_2021_%28brand_version%29.svg" alt="MTV logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Eurosport_Logo_2015.svg" alt="Eurosport logó" class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Natgeologo.svg" alt="National Geographic logó" class="sponsor-logo">
+        </div>
+    </div>
+</footer>
+<script>
+    function showTeamNameField() {
+        var type = document.getElementById('jelentkezes-tipus').value;
+        var teamNameField = document.getElementById('csapat-neve');
+        if (type === 'csapatos') {
+            teamNameField.style.display = 'block';
+        } else {
+            teamNameField.style.display = 'none';
+        }
+    }
+
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Megakadályozza a form valódi beküldését
+        document.getElementById('message').style.display = 'block'; // Megjeleníti a sikeres üzenetet
+    });
+</script>
+</body>
+</html>

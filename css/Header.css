@@ -1,0 +1,111 @@
+header {
+    position: relative;
+    background-image: url('../img/headerP.webp');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth and elegant transition */
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Adjust height for the shrunken state */
+    z-index: 1000; /* Ensure it stays on top */
+    border-radius: 0; /* Remove border radius in sticky state */
+    background-image: none; /* Remove background image in sticky state */
+    background-color: rgba(0, 0, 0, 0.85); /* Add background color for sticky state */
+    transition: height 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition for background color */
+}
+
+.fejléc {
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition for background and padding */
+}
+
+header.sticky .fejléc {
+    background-color: transparent; /* No background needed for the overlay in sticky state */
+    padding: 10px 20px; /* Reduced padding in sticky state */
+    flex-direction: row; /* Align items in a row in sticky state */
+    justify-content: space-between; /* Space between items in sticky state */
+}
+
+#logo {
+    width: 30%;
+    transition: width 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), margin-top 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transitions */
+    padding-right: 0;
+}
+
+header.sticky #logo {
+    width: 80px; /* Smaller logo in sticky state */
+    padding-right: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 2px 2px #555;
+    margin-top: 0;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    transition: font-size 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), margin-bottom 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), margin-top 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition for font size and margins */
+}
+
+header.sticky h1 {
+    font-size: 1.5em; /* Smaller font size in sticky state */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    transition: margin-top 0.7s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition for margin */
+}
+
+header.sticky nav {
+    margin-top: 0; /* Remove top margin in sticky state */
+}
+
+nav a {
+    line-height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 200);
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(219, 204, 150, 0.8), rgba(194, 178, 128, 0.7));
+    transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Adjusted transition timing for hover effects */
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, rgba(219, 204, 150, 1), rgba(194, 178, 128, 0.8));
+    transform: scale(0.98);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, rgba(102, 87, 58, 1), rgba(79, 67, 45, 0.9));
+    transform: scale(0.95);
+}
+

@@ -1,0 +1,8 @@
+Mindegyik:
+-Oldal cím
+-favicon (<link rel="icon" type="image/x-icon" href="/images/favicon.ico">)
+Responsive:
+- Telefon mód:
+	- navigation összemegy és széthúzódik az iconra nyomva (Icon animáció forgó)Főoldal:
+Jelentkezes:
+- csicsázás
