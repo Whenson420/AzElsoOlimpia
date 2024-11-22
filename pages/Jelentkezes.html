@@ -29,12 +29,7 @@
     </header>
     <div class="main">
         <h1 class="main-title">Jelentkezés a versenyre</h1>
-        <p class="main-quote">Csatlakozz a kihíváshoz, és mutasd meg, mit tudsz!</p>
-        <div class="depth">
-            <div class="quote-container">
-                <q class="quote">Ne hagyd ki a lehetőséget, hogy a legjobbakkal versenyezz! Csatlakozz hozzánk, és mutasd meg, hogy te vagy a következő bajnok!</q>
-            </div>
-        </div>
+        <p class="main-quote">Ne hagyd ki a lehetőséget, hogy a legjobbakkal versenyezz! Csatlakozz hozzánk, és mutasd meg, hogy te vagy a következő bajnok!</p>
         <div class="depth" id="jelentkezes">
             <form action="/submit" method="POST" id="registration-form">
                 <label for="name">Név:</label>
@@ -295,7 +290,6 @@
             teamNameField.style.display = 'none';
         }
     }
-
     document.getElementById('registration-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Megakadályozza a form valódi beküldését
         document.getElementById('message').style.display = 'block'; // Megjeleníti a sikeres üzenetet
