@@ -1,11 +1,25 @@
+/****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************
+*****************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
+/*================ - alszekció*/
+/*================================ - főszekció*/
+/*===============Fehérek legyenek az iconok===============*/
 img[src$="pyramid-stroke-rounded.svg"],
 img[src$="cactus-stroke-rounded.svg"],
 img[src$="man-stroke-rounded.svg"] {
     filter: invert(100%) brightness(200%);
 }
 
+/*================Főbb elemek================*/
 body {
     font-family: 'Changa', sans-serif;
     font-optical-sizing: auto;
@@ -24,45 +38,6 @@ body {
     width: 85%;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
-}
-
-.main-title {
-    font-size: 3em; 
-    color: #ffcc00;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px #555; 
-}
-
-.main-quote {
-    font-size: 1.2em; 
-    color: #ffffff;
-    text-align: center;
-    margin-top: 8px;
-    background-color: rgba(255, 206, 0, 0.85);
-    padding: 8px; 
-    border-radius: 8px; 
-    font-style: italic;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-}
-
-.depth {
-    background-color: rgba(0, 0, 0, 0.35);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); 
-    padding: 15px; 
-    margin: 15px 0; 
-    border-radius: 6px; 
-}
-
-.depth h2 {
-    margin-top: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
 }
 
 .custom-background {
@@ -86,6 +61,83 @@ ul {
     z-index: -1;
 }
 
+/*========Kiemelő stílusok========*/
+
+.depth {
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.depth h2 {
+    margin-top: 0;
+}
+
+.depth .button-container {
+    margin: 15px auto;
+}
+
+.brighten {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.brighten h3 {
+    font-size: 30px; /* Slightly larger font size */
+    color: #ffd700; /* Gold color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* More pronounced shadow for depth */
+    text-transform: uppercase;
+    border-bottom: 3px solid #FFD700; /* Thicker gold bottom border */
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.brighten h4 {
+    font-size: 20px;
+    color: rgba(255, 215, 0, 0.77); /* Gold color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Slight shadow for depth */
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.77); /* Gold bottom border */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+/*========Fő címek========*/
+.main-title {
+    font-size: 3em; 
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #555; 
+}
+
+.main-quote {
+    font-size: 1.5em; /* Increase the font size for better readability */
+    color: #ffffff;
+    text-align: center;
+    margin-top: 16px; /* Increase the top margin for better spacing */
+    background: linear-gradient(135deg, rgba(255, 206, 0, 0.95), rgba(255, 174, 0, 0.85)); /* Gradient background for a more dynamic look */
+    padding: 16px; /* Increase padding for a more spacious feel */
+    border-radius: 12px; /* Slightly larger border-radius for smoother corners */
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effect */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*================Képvetítés================*/
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -182,29 +234,16 @@ ul {
     animation-duration: 1.5s;
 }
 
-.jelentkezes {
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 0, 0);
-    margin: 20px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-    animation: dagad 1.2s infinite;
-}
+/*========🤷‍♂️🤷‍♂️🤷‍♂️Figyelemfelkeltő jelentkezésgomb🤷‍♂️🤷‍♂️🤷‍♂️========*/
 
-.jelentkezes h2 {
-    margin: 0;
-    line-height: 1.2;
-}
-
-.arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(255, 0, 0);
-    margin: 0 auto;
-    display: block;
-    animation: dagad 1.2s infinite;
+.sun {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,215,0,1) 0%, rgba(255,140,0,1) 100%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse 3s infinite;
 }
 
 .button-container {
@@ -215,25 +254,6 @@ ul {
     height: 100%;
     align-items: stretch;
 }
-
-.sun-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.sun {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(circle, rgba(255,215,0,1) 0%, rgba(255,140,0,1) 100%);
-    border-radius: 50%;
-    z-index: -1;
-    animation: pulse 3s infinite;
-}
-
-
 
 .pendant-button img {
     width: 100%;
@@ -252,121 +272,9 @@ ul {
     transform: scale(0.95);
 }
 
-.brighten {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.brighten h3 {
-    margin-top: 15px;
-    color: #ffc1a3;
-    font-size: 1.2em;
-}
-
-.depth {
-    background-color: rgba(0, 0, 0, 0.35);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 6px;
-}
-
-.depth h2 {
-    margin-top: 0;
-}
-
 .depth .button-container {
     margin: 15px auto;
 }
-
-.quote-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-.quote {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    background: rgba(194, 178, 128, 0.3);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    position: relative;
-    display: inline-block;
-    flex-grow: 1;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.quote::before {
-    content: '“';
-    font-size: 40px;
-    color: rgba(255, 215, 0, 0.77);
-    position: absolute;
-    left: 10px;
-    top: -20px;
-}
-
-.quote::after {
-    content: '”';
-    font-size: 40px;
-    color: rgba(255, 215, 0, 0.77);
-    position: absolute;
-    right: 10px;
-    bottom: -30px;
-}
-
-.call-to-action {
-    background-color: rgba(255, 223, 186, 0.2);
-    border: 2px solid rgba(255, 165, 0, 0.7);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.call-to-action:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-}
-
-.call-to-action h2 {
-    margin-top: 0;
-    font-size: 1.8em;
-    color: #ffcc00;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-.cta-container {
-    margin-top: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgba(219, 204, 150, 1);
-    color: #000;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.cta-button:hover {
-    background-color: rgba(194, 178, 128, 1);
-    transform: scale(1.05);
-}
-
 
 .jelentkezes {
     text-align: center;
@@ -416,13 +324,7 @@ ul {
     transition: transform 0.3s;
 }
 
-.pendant-button:hover img {
-    transform: scale(1.1);
-}
-
-.pendant-button:active img {
-    transform: scale(0.95);
-}
+/*========Kép gomb========*/
 
 .image-button {
     width: 60%;
@@ -460,19 +362,53 @@ ul {
     transform: scale(1.1);
 }
 
-a {
-    font-size: 14px; 
-    color: rgb(255, 255, 200);
-    text-decoration: none;
-    background: linear-gradient(135deg, rgba(219, 204, 150, 0.7), rgba(194, 178, 128, 0.6));
-    padding: 8px 20px; 
-    border-radius: 8px; 
-    transition: background 0.3s;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-left: 20px;
+/*========Látványos idézetek========*/
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
+
+.quote {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: rgba(194, 178, 128, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.quote::before {
+    content: '“';
+    font-size: 40px;
+    color: rgba(255, 215, 0, 0.77);
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}
+
+.quote::after {
+    content: '”';
+    font-size: 40px;
+    color: rgba(255, 215, 0, 0.77);
+    position: absolute;
+    right: 10px;
+    bottom: -30px;
+}
+
+
+
+/*========Jelentkezési űrlap========*/
 
 form {
     display: flex;
@@ -534,9 +470,6 @@ form .checkbox label {
     margin-left: 5px;
 }
 
-
-
-
 #message {
     display: none;
     position: fixed;
@@ -558,200 +491,122 @@ form .checkbox label {
     animation: slideDown 0.5s ease-out;
 }
 
-.history {
-    font-family: Arial, sans-serif;
-    margin: 15px; 
-    line-height: 1.6;
-}
-
-.history h2 {
-    font-size: 1.8em; 
-    margin-bottom: 10px;
-    color: #999;
-}
-
-.history h3 {
-    font-size: 1.2em; 
-    margin-top: 15px; 
-    margin-bottom: 8px; 
-    color: #ffc1a3;
-}
-
-.history p {
-    font-size: 1em; 
-    color: #bbb;
-    margin-bottom: 12px; 
-    text-align: justify;
-}
-
-.history section h3 {
-    color: #ffc1a3;
-}
-
-.history section {
-    margin-bottom: 15px; 
-}
+/*========Táblázat========*/
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px; 
+    margin: 20px 0;
+    background-color: rgba(244, 244, 244, 0.3); /* Softer background color */
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-table th, table td {
-    border: 1px solid #ccc;
-    padding: 8px; 
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgb(255, 255, 200);
-}
-
-table th {
-    background-color: rgba(194, 178, 128, 0.8);
+thead {
+    background-color: #ffcc00;
+    color: rgba(0, 0, 0, 0.94);
     font-weight: bold;
 }
 
-.brighten {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px; 
-    border-radius: 6px; 
-    margin-bottom: 15px; 
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.4);
 }
 
-.brighten h3 {
-    font-size: 30px; /* Slightly larger font size */
-    color: #ffd700; /* Gold color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* More pronounced shadow for depth */
-    text-transform: uppercase;
-    border-bottom: 3px solid #FFD700; /* Thicker gold bottom border */
-    padding-bottom: 6px;
-    margin-bottom: 20px;
+tbody tr:hover {
+    background-color: rgba(255, 204, 0, 0.1);
 }
 
-
-.brighten h4 {
-    font-size: 20px;
-    color: rgba(255, 215, 0, 0.77); /* Gold color */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Slight shadow for depth */
-    text-transform: uppercase;
-    border-bottom: 2px solid rgba(255, 215, 0, 0.77); /* Gold bottom border */
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+tbody tr:nth-child(even) {
+    background-color: rgba(233, 233, 233, 0.35); /* Softer alternating row color */
 }
 
-
-.depth .button-container {
-    margin: 15px auto; 
-}
-
-@media (max-width: 1010px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0;
-        gap: 5px;
-    }
-
-    nav a {
-        padding: 8px 12px;
-        margin: 0;
-        text-align: center;
-        flex: 1;
-        min-width: 120px;
-    }
+th {
+    background-color: #ffcc00;
 }
 
 @media (max-width: 768px) {
-    .main, .depth, header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 10px 20px 10px 10px;
+    table, thead, tbody, th, td, tr {
+        display: block;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0 20px;
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
 
-    nav a {
-        font-size: 16px;
-        padding: 8px 12px;
-        margin: 5px 0;
-        width: 80%;
-        text-align: center;
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
     }
 
-    .pendant-button {
-        width: 250px;
-        height: 250px;
-        margin: 20px 0;
-    }
-
-    .quote-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .quote {
-        font-size: 16px;
-        width: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .image-button {
-        width: 100px;
-        height: auto;
-        margin: 0;
-        padding: 15px;
-        align-self: center;
-    }
-
-    .jelentkezes {
-        font-size: 20px;
-        text-align: center;
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
     }
 }
 
+/*========Térkép========*/
 
-@media (max-width: 480px) {
-    .pendant-button {
-        width: 200px;
-        height: 200px;
-    }
 
-    .quote {
-        font-size: 18px;
-    }
 
-    nav a {
-        font-size: 14px;
-    }
+/*========Figyelemfelkeltő gomb========*/
 
-    .arrow {
-        width: 0;
-        height: 0;
-        border-left: 12px solid transparent;
-        border-right: 12px solid transparent;
-        border-top: 12px solid rgb(255, 215, 0);
-    }
-
-    .jelentkezes {
-        font-size: 18px;
-    }
+.call-to-action {
+    background-color: rgba(255, 223, 186, 0.2);
+    border: 2px solid rgba(255, 165, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.call-to-action:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.call-to-action h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cta-container {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(219, 204, 150, 1);
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(194, 178, 128, 1);
+    transform: scale(1.05);
+}
+
+/*================😶‍🌫️😶‍🌫️😶‍🌫️Animációk😶‍🌫️😶‍🌫️😶‍🌫️================*/
 
 @keyframes rotate {
     0% {
@@ -787,7 +642,6 @@ table th {
     from {opacity: .4}
     to {opacity: 1}
 }
-
 
 @keyframes pulse {
     0% { transform: scale(1); }

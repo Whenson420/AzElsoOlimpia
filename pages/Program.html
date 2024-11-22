@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/Header.css">
   <script src="../js/stickyNav.js"></script>
   <link rel="stylesheet" href="../css/Footer.css">
+  <link rel="stylesheet" href="../css/Program.css">
   <meta name="description" content="Részletes információk a programokról és jegyvásárlásról az Első Sivatagi Játékokon.">
 </head>
 <body>
@@ -36,6 +37,7 @@
       <table>
         <thead>
         <tr>
+          <th>Dátum</th>
           <th>Időpont</th>
           <th>Versenyszám</th>
           <th>Helyszín</th>
@@ -44,21 +46,58 @@
         </thead>
         <tbody>
         <tr>
-          <td>2024. május 10. - 10:00</td>
-          <td>Homokfutam</td>
-          <td>Nagy-dűne</td>
-          <td>Extrém hosszútávú futás a sivatagon keresztül</td>
+          <td>2024.06.01.</td>
+          <td>9:00-10:30</td>
+          <td>Kaktuszmászás</td>
+          <td>Kaktuszos Kanyon</td>
+          <td>A versenyzőknek sziklás terepen, hatalmas kaktuszokon kell átmászniuk különleges felszerelés nélkül.</td>
         </tr>
         <tr>
-          <td>2024. május 10. - 14:00</td>
-          <td>Dűneugrás</td>
-          <td>Központi dűnetér</td>
-          <td>Speciális ugróverseny a homokdűnékről</td>
+          <td>2024.06.01.</td>
+          <td>11:00-12:30</td>
+          <td>Piramis Ugrás</td>
+          <td>Nagy Piramis Aréna</td>
+          <td>Versenyzők hatalmas piramisokon kell hogy átugorjanak, miközben pontosságra és ügyességre is szükség van.</td>
         </tr>
-        <!-- További események -->
+        <tr>
+          <td>2024.06.01.</td>
+          <td>14:00-15:30</td>
+          <td>Homokszánkó-verseny</td>
+          <td>Arany Dűne Pálya</td>
+          <td>Meredek homokdűnéken kell szánkóval lesiklani, figyelve a sebességre és irányíthatóságra.</td>
+        </tr>
+        <tr>
+          <td>2024.06.02.</td>
+          <td>16:00-17:30</td>
+          <td>Homokvihar Futam</td>
+          <td>Homokvihar Pálya</td>
+          <td>A résztvevőknek egy mesterséges homokviharban kell átküzdeniük magukat egy kijelölt pályán.</td>
+        </tr>
+        <tr>
+          <td>2024.06.02.</td>
+          <td>18:00-19:30</td>
+          <td>Tűzforró Híd Próbája</td>
+          <td>Napkapu Aréna</td>
+          <td>Forró homokon és égető akadályokon kell átjutniuk, miközben egyensúlyoznak egy keskeny hídon.</td>
+        </tr>
+        <tr>
+          <td>2024.06.02.</td>
+          <td>20:00-21:00</td>
+          <td>Sivatagi Labirintus Kihívás</td>
+          <td>Homok Csarnok</td>
+          <td>Egy óriási labirintusban kell eligazodniuk, ahol időre kell megtalálniuk a kijáratot, elkerülve a csapdákat.</td>
+        </tr>
+        <tr>
+          <td>2024.06.02.</td>
+          <td>21:30-23:00</td>
+          <td>Éjszakai Csillagfutás</td>
+          <td>Holdfény Pálya</td>
+          <td>Éjszakai akadálypálya fejlámpával, ahol a versenyzőknek sötétben kell tájékozódniuk és teljesíteniük a kihívásokat.</td>
+        </tr>
         </tbody>
       </table>
     </div>
+
     <div class="depth">
       <h2>Jegyvásárlás</h2>
       <div class="button-container">
@@ -107,11 +146,21 @@
     </div>
 
     <div class="depth">
-      <h2>Fontos Információk a Nézők Számára</h2>
       <div class="brighten">
         <h3>Helyszín Elérhetősége</h3>
         <p><strong>Cím:</strong> Sivatagi Aréna, Nagy-dűne térség, Helynév.</p>
-        <p><strong>Térkép:</strong> Interaktív térkép a helyszínhez.</p>
+        <p><strong>Térkép:</strong></p>
+        <div class="map-container">
+          <img src="../img/Terkep.webp" alt="Map of the desert area" usemap="#image-map" class="map-image">
+          <map name="image-map">
+            <area target="" alt="Kaktuszos Kanyon" title="Kaktuszos Kanyon" href="" coords="2,158,156,590" shape="rect" data-text="Kaktuszos Kanyon: Sziklás terep kaktuszokkal">
+            <area target="" alt="Arany Dűne" title="Arany Dűne" href="" coords="229,17,405,187" shape="rect" data-text="Arany Dűne: Meredek homokdűnék helyszíne">
+            <!--Ez a térkép borzalmas, de ez volt a legjobb amit a ChatGPT generált :*( -->
+          </map>
+          <div id="hover-text" class="hover-text"></div>
+        </div>
+      </div>
+      <script src="../js/Terkep.js"></script>
       </div>
       <div class="brighten">
         <h3>Parkolási információk:</h3>
@@ -171,6 +220,12 @@
           </ul>
         </div>
       </div>
+    <div class="depth call-to-action">
+      <h2>A dicsőség csak a legbátrabbakat várja. Te közéjük tartozol?</h2>
+      <div class="cta-container">
+        <a href="Jelentkezes.html" class="cta-button">Készen állsz? Jelentkezz most!</a>
+      </div>
+    </div>
     </div>
   </div>
 </div>
