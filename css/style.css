@@ -33,27 +33,28 @@ body {
 
 .main {
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 10px; 
-    border-radius: 10px; 
-    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transform: scale(0.8);
+    transform-origin: top;
 }
 
 .custom-background {
     position: relative;
-    min-height: 100vh;
     overflow: hidden;
+    height: auto;
 }
 
 .custom-background::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/hatterkep.jpg");
+    background-image: url("../img/hatterkep.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,7 +109,7 @@ body {
     font-size: 3em; 
     color: #ffcc00;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
     text-shadow: 1px 1px #555; 
 }
 
@@ -116,14 +117,12 @@ body {
     font-size: 1.5em;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px;
+    margin: 40px auto;
     background-color: rgb(255, 206, 0);
     padding: 20px;
     border-radius: 15px;
     font-style: italic;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    margin-left: auto;
-    margin-right: auto;
     width: fit-content;
     max-width: 90%;
     background-image: url('../img/6229040.jpg');
@@ -592,7 +591,10 @@ form .checkbox label {
     border-radius: 10px; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
     max-width: 80vw; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .news-section h3 {
@@ -608,7 +610,8 @@ form .checkbox label {
 }
 
 .news-content {
-    display: none; 
+    display: none;
+    text-align: left;
 }
 
 .news-item {
@@ -645,10 +648,10 @@ form .checkbox label {
     color: #fff; 
     border: none;
     border-radius: 5px; 
-    padding: 5px 10px; 
+    padding: 5px 30px;
     cursor: pointer; 
     font-size: 1.2em; 
-    transition: background-color 0.3s, transform 0.3s; 
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #toggle-news:hover {
@@ -670,8 +673,8 @@ form .checkbox label {
 }
 
 .contestant-photo {
-    width: 120px !important;
-    height: 120px !important;
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     object-fit: cover;
@@ -750,6 +753,10 @@ form .checkbox label {
     }
     .prev, .next {
         padding: 10px;
+    }
+    .contestant-photo {
+        width: 100px !important;
+        height: 100px !important;
     }
 }
 
