@@ -393,12 +393,12 @@ ul {
 }
 
 #message {
-    text-align: center; /* Center the message */
+    text-align: center; 
     margin-top: 0;
     font-size: 1.2em;
-    color: #ff6600; /* Matching color to blend with the design */
-    display: none; /* Hide the message initially */
-    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+    color: #ff6600; 
+    display: none; 
+    animation: fadeIn 0.5s ease-in-out; 
 }
 
 .pendant-button:hover, .image-button:hover {

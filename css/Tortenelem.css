@@ -1,121 +1,121 @@
 .history {
     font-family: 'Arial', sans-serif;
     line-height: 1.8;
-    background-color: rgba(0, 0, 0, 0.46); /* Light background for better readability */
+    background-color: rgba(0, 0, 0, 0.46); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Add margin to separate sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
 }
 
 .history h2 {
-    font-size: 2.2em; /* Slightly larger font size */
+    font-size: 2.2em; 
     margin-bottom: 20px;
-    color: #ffcc00; /* Bright color for h2 */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    border-bottom: 2px solid #ffcc00; /* Bottom border for separation */
+    color: #ffcc00; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    border-bottom: 2px solid #ffcc00; 
     padding-bottom: 10px;
 }
 
 .history h3 {
-    font-size: 1.8em; /* Slightly larger font size */
-    margin-top: 30px; /* More space above */
+    font-size: 1.8em; 
+    margin-top: 30px; 
     margin-bottom: 15px;
-    color: #ff9999; /* Bright color for h3 */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    border-left: 4px solid #ff9999; /* Left border for emphasis */
-    padding-left: 15px; /* More padding for better spacing */
+    color: #ff9999; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
+    border-left: 4px solid #ff9999; 
+    padding-left: 15px; 
 }
 
 .history p {
-    font-size: 1.2em; /* Slightly larger font size */
-    color: #333; /* Darker color for better readability */
+    font-size: 1.2em; 
+    color: #333; 
     margin-bottom: 20px;
     text-align: justify;
-    line-height: 1.8; /* Increased line height for better readability */
-    background-color: rgba(255, 243, 205, 0.8); /* Lighter background color */
-    padding: 15px; /* More padding for better spacing */
-    border-radius: 8px; /* More rounded corners */
+    line-height: 1.8; 
+    background-color: rgba(255, 243, 205, 0.8); 
+    padding: 15px; 
+    border-radius: 8px; 
 }
 
 .history section {
-    margin-bottom: 25px; /* More space between sections */
+    margin-bottom: 25px; 
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1); /* Light background for sections */
+    background: rgba(255, 255, 255, 0.1); 
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Class-specific styles */
+
 .intro {
-    background-color: rgba(255, 223, 186, 0.2); /* Light peach background */
-    text-align: center; /* Center the image and text */
+    background-color: rgba(255, 223, 186, 0.2); 
+    text-align: center; 
 }
 
 .intro img {
     display: block;
-    margin: 0 auto 20px auto; /* Center the image with margin below */
-    max-width: 80%; /* Adjust the size of the image */
+    margin: 0 auto 20px auto; 
+    max-width: 80%; 
     height: auto;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    transition: transform 0.3s ease; /* Add smooth zoom effect */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease; 
 }
 
 .intro img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
 .origin, .milestones {
-    background-color: rgba(186, 223, 255, 0.2); /* Light blue background for origin */
+    background-color: rgba(186, 223, 255, 0.2); 
     display: flex;
-    align-items: center; /* Center the images vertically */
-    padding: 20px; /* Add padding for better spacing */
-    margin-bottom: 25px; /* More space between sections */
-    border-radius: 10px; /* More rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    align-items: center; 
+    padding: 20px; 
+    margin-bottom: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .origin img {
-    margin: 0 20px; /* Space between the image and text */
-    max-width: 40%; /* Adjust the size of the image */
+    margin: 0 20px; 
+    max-width: 40%; 
     height: auto;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .origin .content, .milestones .content {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Allow the content to take up the remaining space */
+    flex: 1; 
 }
 
 .milestones {
-    flex-direction: row-reverse; /* Align the image to the right */
+    flex-direction: row-reverse; 
 }
 
 .milestones img {
-    margin: 0 20px;  /* Space between the image and text */
-    max-width: 40%; /* Adjust the size of the image */
+    margin: 0 20px;  
+    max-width: 40%; 
     height: auto;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .what-makes-special {
-    background-color: rgba(255, 186, 223, 0.2); /* Light pink background */
+    background-color: rgba(255, 186, 223, 0.2); 
 }
 
 .evolution {
-    background-color: rgba(223, 255, 186, 0.2); /* Light yellow-green background */
+    background-color: rgba(223, 255, 186, 0.2); 
 }
 
 .future {
-    background-color: rgba(223, 186, 255, 0.2); /* Light purple background */
+    background-color: rgba(223, 186, 255, 0.2); 
 }
 
 .closing {
-    background-color: rgba(186, 255, 255, 0.2); /* Light cyan background */
+    background-color: rgba(186, 255, 255, 0.2); 
 }
 
 @media (max-width: 768px) {
@@ -126,11 +126,11 @@
     }
 
     .origin img, .milestones img {
-        margin: 0 0 20px 0; /* Adjust margin for images */
-        max-width: 100%; /* Ensure images take up full width */
+        margin: 0 0 20px 0; 
+        max-width: 100%; 
     }
 
     .origin .content, .milestones .content {
-        width: 100%; /* Ensure content takes up full width */
+        width: 100%; 
     }
 }

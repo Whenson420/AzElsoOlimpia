@@ -2,16 +2,16 @@
     position: relative;
     text-align: center;
     margin-top: 20px;
-    max-width: 100%; /* Ensure the container doesn't restrict image width */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center the image horizontally */
+    max-width: 100%; 
+    display: flex; 
+    justify-content: center; 
 }
 
 .map-image {
     width: 100%;
-    max-width: 600px; /* Set a maximum width for larger screens */
+    max-width: 600px; 
     height: auto;
-    max-height: 60vh; /* Adjust the height to fit within the screen height */
+    max-height: 60vh; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -37,12 +37,12 @@
     display: block;
 }
 
-/* Base styles for the table */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: rgba(244, 244, 244, 0.3); /* Softer background color */
+    background-color: rgba(244, 244, 244, 0.3); 
     border-radius: 8px;
     overflow: hidden;
 }
@@ -60,14 +60,14 @@ th, td {
 }
 
 tbody tr:nth-child(even) {
-    background-color: rgba(233, 233, 233, 0.35); /* Softer alternating row color */
+    background-color: rgba(233, 233, 233, 0.35); 
 }
 
 th {
     background-color: #ffcc00;
 }
 
-/* Responsive styles for tablet and mobile views */
+
 
 
 .image-button img {
@@ -77,8 +77,8 @@ th {
 
 @media (max-width: 768px) {
     .map-image {
-        max-width: 100% !important; /* Increase the width to 100% on tablet and mobile */
-        max-height: 90vh !important; /* Adjust the height to fit more of the screen */
+        max-width: 100% !important; 
+        max-height: 90vh !important; 
     }
 
     table, thead, tbody, th, td, tr {
