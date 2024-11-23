@@ -35,18 +35,15 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 10px;
-    width: 100%;
+    width: 75%;
     height: 100%;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    transform: scale(0.8);
-    transform-origin: top;
 }
 
 .custom-background {
     position: relative;
     overflow: hidden;
-    height: auto;
 }
 
 .custom-background::before {
@@ -106,11 +103,11 @@ body {
 
 /*========Fő címek========*/
 .main-title {
-    font-size: 3em; 
+    font-size: 3em;
     color: #ffcc00;
     text-align: center;
     margin: 20px 0 10px 0;
-    text-shadow: 1px 1px #555; 
+    text-shadow: 1px 1px #555;
 }
 
 .main-quote {
@@ -393,12 +390,12 @@ ul {
 }
 
 #message {
-    text-align: center; 
+    text-align: center;
     margin-top: 0;
     font-size: 1.2em;
-    color: #ff6600; 
-    display: none; 
-    animation: fadeIn 0.5s ease-in-out; 
+    color: #ff6600;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .pendant-button:hover, .image-button:hover {
@@ -588,9 +585,9 @@ form .checkbox label {
 .news-section {
     background-color: rgba(255, 223, 186, 0.2);
     padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
-    max-width: 80vw; 
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 80vw;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -598,12 +595,12 @@ form .checkbox label {
 }
 
 .news-section h3 {
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Pacifico', cursive;
     font-size: 2em;
     color: #fff;
     text-align: center;
     margin-bottom: 15px;
-    animation: fadeIn 1s ease-in-out; 
+    animation: fadeIn 1s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -615,12 +612,12 @@ form .checkbox label {
 }
 
 .news-item {
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 10px;
-    animation: slideUp 0.8s ease-in-out; 
-    transition: transform 0.3s, box-shadow 0.3s; 
+    animation: slideUp 0.8s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .news-item:hover {
@@ -629,7 +626,7 @@ form .checkbox label {
 }
 
 .news-item h4 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #fff;
     margin-bottom: 5px;
@@ -637,26 +634,26 @@ form .checkbox label {
 }
 
 .news-item p {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color: #fff;
     line-height: 1.6;
 }
 
 #toggle-news {
-    background-color: #ff6600; 
-    color: #fff; 
+    background-color: #ff6600;
+    color: #fff;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 5px 30px;
-    cursor: pointer; 
-    font-size: 1.2em; 
+    cursor: pointer;
+    font-size: 1.2em;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 #toggle-news:hover {
-    background-color: #ff5500; 
-    transform: scale(1.1); 
+    background-color: #ff5500;
+    transform: scale(1.1);
 }
 
 /*========Versenyző képek========*/
