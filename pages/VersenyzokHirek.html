@@ -28,59 +28,92 @@
   </header>
 
   <div class="main">
-    <div class="depth">
-      <div class="brighten">
-        <h3>Határidő</h3>
-        <p>Ne maradj le! Jelentkezési határidő: 2024. december 1.</p>
+    <section class="depth news-section" id="news">
+      <h3>Hírek és események <button id="toggle-news" onclick="toggleNews()">▲</button></h3>
+      <div class="news-content">
+        <div class="news-item">
+          <h4>Új szponzorok a versenyen!</h4>
+          <p>A verseny idén új szponzorokat köszönthet. Köszönjük támogatásukat!</p>
+        </div>
+        <div class="news-item">
+          <h4>Verseny előkészületek</h4>
+          <p>A szervezők mindent megtesznek, hogy az esemény zökkenőmentes legyen. Részletek hamarosan!</p>
+        </div>
+        <div class="news-item">
+          <h4>Legjobb Versenyzők Teljesítményei</h4>
+          <p>Hírek a legutóbbi versenyek legkiemelkedőbb versenyzőiről, rekordjaikról és teljesítményeikről.</p>
+        </div>
+        <div class="news-item">
+          <h4>Új Versenyzők Bemutatása</h4>
+          <p>Bejelentések az új résztvevőkről, akik először indulnak a versenyen.</p>
+        </div>
+        <div class="news-item">
+          <h4>Mentális Felkészülés és Stratégia</h4>
+          <p>Cikkek a versenyzők mentális felkészüléséről, a stressz kezeléséről és a sikerhez vezető stratégiákról.</p>
+        </div>
+        <div class="news-item">
+          <h4>Technikai Fejlesztések</h4>
+          <p>Hírek az új technológiai újításokról, például a pályán alkalmazott fejlesztésekről vagy verseny előtti új eszközökről.</p>
+        </div>
+        <div class="news-item">
+          <h4>Kiemelt Szponzorok</h4>
+          <p>Információk az új szponzorokkal kötött megállapodásokról és a támogatók szerepéről a versenyeken.</p>
+        </div>
       </div>
-    </div>
+    </section>
+
     <section class="depth" id="competitors">
       <h3>Versenyzők bemutatása</h3>
 
       <div class="brighten">
         <h4>Kovács Márk</h4>
-        <img src="../img/Versenyzok/KovacsMark.webp" alt="Kovács Márk" class="contestant-photo">
-        <p>Származás: Magyarország</p>
-        <p>Sportmúlt: Hegyi futóversenyek többszörös nyertese.</p>
-        <p>Motiváció: A természet és a kihívások iránti szeretet vezérli. Célja, hogy az első sivatagi játékokon történelmet írjon.</p>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>Származás: Magyarország</p>
+            <p>Sportmúlt: Hegyi futóversenyek többszörös nyertese.</p>
+            <p>Motiváció: A természet és a kihívások iránti szeretet vezérli. Célja, hogy az első sivatagi játékokon történelmet írjon.</p>
+          </div>
+          <img src="../img/Versenyzok/KovacsMark.webp" alt="Kovács Márk" class="contestant-photo">
+        </div>
       </div>
 
       <div class="brighten">
         <h4>Aisha Al-Mansouri</h4>
-        <img src="../img/Versenyzok/AishaAl-Mansouri.webp" alt="Aisha Al-Mansouri" class="contestant-photo">
-        <p>Származás: Egyesült Arab Emírségek</p>
-        <p>Sportmúlt: Helyi sivatagi maratonok sztárja.</p>
-        <p>Motiváció: Büszkeséget hozni hazájának és inspirálni a fiatal nőket, hogy merjenek nagyot álmodni.</p>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>Származás: Egyesült Arab Emírségek</p>
+            <p>Sportmúlt: Helyi sivatagi maratonok sztárja.</p>
+            <p>Motiváció: Büszkeséget hozni hazájának és inspirálni a fiatal nőket, hogy merjenek nagyot álmodni.</p>
+          </div>
+          <img src="../img/Versenyzok/AishaAl-Mansouri.webp" alt="Aisha Al-Mansouri" class="contestant-photo">
+        </div>
       </div>
 
       <div class="brighten">
         <h4>Diego Ramirez</h4>
-        <img src="../img/Versenyzok/DiegoRamirez.webp" alt="Diego Ramirez" class="contestant-photo">
-        <p>Származás: Mexikó</p>
-        <p>Sportmúlt: Profi kerékpáros, több országúti verseny dobogósa.</p>
-        <p>Motiváció: Új kihívások keresése, hogy bebizonyítsa, az extrém terepek sem állíthatják meg.</p>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>Származás: Mexikó</p>
+            <p>Sportmúlt: Profi kerékpáros, több országúti verseny dobogósa.</p>
+            <p>Motiváció: Új kihívások keresése, hogy bebizonyítsa, az extrém terepek sem állíthatják meg.</p>
+          </div>
+          <img src="../img/Versenyzok/DiegoRamirez.webp" alt="Diego Ramirez" class="contestant-photo">
+        </div>
       </div>
 
       <div class="brighten">
         <h4>Sophia Lee</h4>
-        <img src="../img/Versenyzok/SophiaLee.webp" alt="Sophia Lee" class="contestant-photo">
-        <p>Származás: Dél-Korea</p>
-        <p>Sportmúlt: Extrém sportok rajongója, sziklamászás és ultrafutás szakértője.</p>
-        <p>Motiváció: Leküzdeni önmagát, és a világ legnehezebb versenyein indulni.</p>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>Származás: Dél-Korea</p>
+            <p>Sportmúlt: Extrém sportok rajongója, sziklamászás és ultrafutás szakértője.</p>
+            <p>Motiváció: Leküzdeni önmagát, és a világ legnehezebb versenyein indulni.</p>
+          </div>
+          <img src="../img/Versenyzok/SophiaLee.webp" alt="Sophia Lee" class="contestant-photo">
+        </div>
       </div>
     </section>
 
-    <section class="depth" id="news">
-      <h3>Hírek és események</h3>
-      <div class="brighten">
-        <h4>Új szponzorok a versenyen!</h4>
-        <p>A verseny idén új szponzorokat köszönthet. Köszönjük támogatásukat!</p>
-      </div>
-      <div class="brighten">
-        <h4>Verseny előkészületek</h4>
-        <p>A szervezők mindent megtesznek, hogy az esemény zökkenőmentes legyen. Részletek hamarosan!</p>
-      </div>
-    </section>
     <div class="depth">
       <div class="brighten">
         <h4>Díj és nevezési költség</h4>
@@ -183,6 +216,6 @@
     </div>
   </div>
 </footer>
-
+<script src="../js/News.js"></script>
 </body>
 </html>

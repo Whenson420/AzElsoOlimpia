@@ -83,30 +83,22 @@ body {
 }
 
 .brighten h3 {
-    font-size: 30px; /* Slightly larger font size */
-    color: #ffd700; /* Gold color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* More pronounced shadow for depth */
-    text-transform: uppercase;
-    border-bottom: 3px solid #FFD700; /* Thicker gold bottom border */
-    padding-bottom: 6px;
+    font-size: 30px;     color: #ffd700;     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);     text-transform: uppercase;
+    border-bottom: 3px solid #FFD700;     padding-bottom: 6px;
     margin-bottom: 20px;
 }
 
 .brighten h4 {
     font-size: 20px;
-    color: rgba(255, 215, 0, 0.77); /* Gold color */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Slight shadow for depth */
-    text-transform: uppercase;
-    border-bottom: 2px solid rgba(255, 215, 0, 0.77); /* Gold bottom border */
-    padding-bottom: 5px;
+    color: rgba(255, 215, 0, 0.77);     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);     text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.77);     padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
 .brighten img {
     display: block;
     margin: 0 auto;
-    width: 40%; /* Adjust the width to make the images smaller */
-    height: auto;
+    width: 40%;     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
@@ -122,48 +114,26 @@ body {
 }
 
 .main-quote {
-    font-size: 1.5em; /* Increase the font size for better readability */
+    font-size: 1.5em;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px; /* Slightly increase the top margin for better spacing */
-    background-color: rgb(200, 179, 0); /* Solid background color */
-    padding: 20px; /* Increase padding for a more spacious feel */
-    border-radius: 15px; /* Larger border-radius for smoother corners */
+    margin-top: 20px;
+    background-color: rgb(255, 206, 0);
+    padding: 20px;
+    border-radius: 15px;
     font-style: italic;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    max-width: 90%; /* Ensure it fits within the container */
-    background-image: url('../img/6229040.jpg'); /* Use a subtle pattern image */
+    max-width: 90%;
+    background-image: url('../img/6229040.jpg');
     background-size: cover;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative; /* Enable positioning for overlay */
-}
-
-.main-quote {
-    font-size: 1.5em; /* Increase the font size for better readability */
-    color: #ffffff;
-    text-align: center;
-    margin-top: 20px; /* Slightly increase the top margin for better spacing */
-    background-color: rgb(255, 206, 0); /* Solid background color */
-    padding: 20px; /* Increase padding for a more spacious feel */
-    border-radius: 15px; /* Larger border-radius for smoother corners */
-    font-style: italic;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    max-width: 90%; /* Ensure it fits within the container */
-    background-image: url('../img/6229040.jpg'); /* Use a subtle pattern image */
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative; /* Enable positioning for overlay */
-    z-index: 1; /* Ensure it is above the overlay */
+    position: relative;
+    z-index: 1;
 }
 
 .main-quote::before {
@@ -173,16 +143,43 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.22); /* Semi-transparent overlay */
-    border-radius: 15px; /* Match the border-radius of the main element */
-    z-index: -1; /* Place it below the text */
+    background-color: rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
+    z-index: -1;
 }
-
 
 ul {
     list-style-type: none;
     padding-left: 0;
 }
+
+.brighten ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.brighten li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bullet {
+    width: 24px !important;
+    height: auto !important;
+    margin-right: 10px !important;
+    vertical-align: middle !important;
+    filter: none !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+.brighten span {
+    margin-left: 10px; }
 
 /*================Képvetítés================*/
 
@@ -397,6 +394,15 @@ ul {
     opacity: 0.8;
 }
 
+#message {
+    text-align: center; /* Center the message */
+    margin-top: 0px;
+    font-size: 1.2em;
+    color: #ff6600; /* Matching color to blend with the design */
+    display: none; /* Hide the message initially */
+    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+}
+
 .pendant-button:hover, .image-button:hover {
     animation: none;
     transform: scale(1.1);
@@ -579,15 +585,100 @@ form .checkbox label {
     transform: scale(1.05);
 }
 
+/*========Hírek========*/
+
+.news-section {
+    background-color: rgba(255, 223, 186, 0.2);
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+    max-width: 80vw; 
+    margin: 0 auto; 
+}
+
+.news-section h3 {
+    font-family: 'Pacifico', cursive; 
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-content {
+    display: none; 
+}
+
+.news-item {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    animation: slideUp 0.8s ease-in-out; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.news-item h4 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.news-item p {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+}
+
+#toggle-news {
+    background-color: #ff6600; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 1.2em; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+#toggle-news:hover {
+    background-color: #ff5500; 
+    transform: scale(1.1); 
+}
+
 /*========Versenyző képek========*/
 
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 10px;
+}
+
 .contestant-photo {
-    display: block;
-    margin: 0 auto 10px auto; /* Center the image with margin below */
-    width: 50%; /* Adjust the size of the image */
-    height: auto;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    border: 2px solid #fff;
+    align-self: flex-start;
+    left: 40px;
 }
 
 
@@ -626,26 +717,57 @@ form .checkbox label {
 @keyframes fade {
         from {opacity: .4}
         to {opacity: 1}
-    }
+}
 
 @keyframes pulse {
         0% { transform: scale(1); }
         50% { transform: scale(1.1); }
         100% { transform: scale(1); }
-    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 /*================👾👾👾Reszponzivitás👾👾👾================*/
 
 @media (max-width: 1024px) {
     .quote-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
     .image-button {
         width: 100%;
-        order: 2; /* Ensure image-button comes after quote */
+        order: 2;
     }
     .quote {
-        order: 1; /* Ensure quote comes first */
+        order: 1;
+    }
+    .main-title {
+        font-size: 2.5em;
+    }
+    .main-quote {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.25em;
+    }
+    .main-quote {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px){
+    .main-title {
+        font-size: 2em;
+    }
+    .main-quote {
+        font-size: 1em;
+        padding: 10px;
     }
 }
 

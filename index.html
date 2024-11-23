@@ -65,17 +65,17 @@
       <h2>Esemény fő jellemzői</h2>
       <ul class="brighten">
         <li>
-          <img src="/img/pyramid-stroke-rounded.svg" alt="Piramis ikon">
+          <img class="bullet" src="/img/pyramid-stroke-rounded.svg" alt="Piramis ikon">
           Piramis Ugrás:
           <span>„A versenyzők a sivatagi piramisok tetejéről ugranak a mélybe, stílusos és pontos landolásért küzdve.”</span>
         </li>
         <li>
-          <img src="/img/cactus-stroke-rounded.svg" alt="Kaktusz ikon">
+          <img class="bullet" src="/img/cactus-stroke-rounded.svg" alt="Kaktusz ikon">
           Kaktusz Mászás:
           <span>„Tüskés kaktuszerdők közötti életveszélyes mászás, ahol minden mozdulat számít.”</span>
         </li>
         <li>
-          <img src="/img/man-stroke-rounded.svg" alt="Versenyző ikon">
+          <img class="bullet" src="/img/man-stroke-rounded.svg" alt="Versenyző ikon">
           Egyedi versenyek és kihívások:
           <span>Például: „Ősi hagyományokon alapuló kihívások a modern kor harcosainak.”</span>
         </li>
@@ -88,7 +88,7 @@
       </div>
       <div class="button-container">
         <div class="sun"></div>
-        <button type="button" class="pendant-button" name="Jelentkezes" onclick="window.location.href='Jelentkezes.html';">
+        <button type="button" class="pendant-button" name="Jelentkezes" onclick="window.location.href='pages/Jelentkezes.html';">
           <img src="/img/Button.png" alt="Jelentkezési gomb képe">
         </button>
       </div>
@@ -102,11 +102,14 @@
       <div class="quote-container">
         <q class="quote">Légy ott személyesen, és szurkolj élőben a versenyzőknek! Szerezd meg a jegyed most, és légy tanúja az év legnagyobb sivatagi kihívásának!</q>
         <div class="button-container">
-          <button type="button" class="image-button" name="JegyV">
+          <button type="button" class="image-button" name="JegyV" onclick="showMessage()">
             <img src="/img/Ticket.png" alt="Jegyvásárlás gomb képe">
           </button>
         </div>
       </div>
+    </div>
+    <div id="message">
+      Hamarosan...
     </div>
     <div class="depth call-to-action">
       <h2>A dicsőség csak a legbátrabbakat várja. Te közéjük tartozol?</h2>
@@ -156,8 +159,8 @@
     </div>
   </div>
 </footer>
-
-</body>
 <script src="js/hazudtam.js"></script>
 <script src="js/slideshow.js"></script>
+<script src="js/Jegyvasarlas.js"></script>
+</body>
 </html>
