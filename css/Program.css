@@ -32,3 +32,63 @@
 .map-container area:hover + .hover-text {
     display: block;
 }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(244, 244, 244, 0.3); /* Softer background color */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #ffcc00;
+    color: rgba(0, 0, 0, 0.94);
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.4);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(233, 233, 233, 0.35); /* Softer alternating row color */
+}
+
+th {
+    background-color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}

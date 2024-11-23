@@ -58,7 +58,6 @@ header.sticky #logo {
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
     color: #ffcc00;
     text-shadow: 2px 2px #555;
     margin-top: 0;
@@ -109,3 +108,110 @@ nav a.active {
     transform: scale(0.95);
 }
 
+/* Media Queries for Mobile and Tablet view */
+@media (max-width: 1024px) {
+    header {
+        height: 100vh; /* Full height */
+        width: 100vw; /* Full width */
+    }
+
+    .fejléc {
+        width: 95%;
+        height: 95%; /* Adjust to 95% width and height */
+    }
+
+    header.sticky h1 {
+        font-size: 1.7em; /* Adjust font size for tablet view */
+        margin-bottom: 0;
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    /* Collapsible Navbar for Tablet and Mobile */
+    header.sticky nav {
+        display: none; /* Hide navbar in sticky state */
+    }
+
+    header.sticky .fejléc::after {
+        content: '\2630'; /* Unicode character for hamburger menu */
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Style for the expanded menu */
+    header.sticky.expanded nav {
+        display: flex; /* Show navbar when expanded */
+        flex-direction: column;
+        align-items: center; /* Center items */
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 80px; /* Below the sticky header */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Adjust padding */
+        z-index: 1001; /* Above the header */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    header.sticky.expanded nav a {
+        width: 90%; /* Slightly reduce width to prevent clipping */
+        max-width: 400px; /* Set max width */
+        text-align: center;
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 100vh; /* Full height */
+        width: 100vw; /* Full width */
+    }
+
+    .fejléc {
+        width: 95%;
+        height: 95%; /* Adjust to 95% width and height */
+    }
+
+    header.sticky h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+        margin-bottom: 0;
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    header.sticky .fejléc {
+        height: 100px; /* Increased height when sticky is applied */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 100vh; /* Full height */
+        width: 100vw; /* Full width */
+    }
+
+    .fejléc {
+        width: 95%;
+        height: 95%; /* Adjust to 95% width and height */
+    }
+
+    header.sticky h1 {
+        font-size: 1.2em; /* Smaller font size for mobile */
+        margin-bottom: 0;
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+}

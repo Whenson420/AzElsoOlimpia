@@ -17,3 +17,15 @@ function myFunction() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const fejlec = document.querySelector('.fejléc');
+
+    fejlec.addEventListener('click', function() {
+        if (window.innerWidth <= 1024 && header.classList.contains('sticky')) {
+            header.classList.toggle('expanded');
+        }
+    });
+});
+

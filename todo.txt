@@ -1,11 +1,1 @@
-Mindegyik:
--Oldal cím
--favicon (<link rel="icon" type="image/x-icon" href="./img/logoIco.ico">)
-
-Responsive:
-- Telefon mód:
-	- navigation összemegy és széthúzódik az iconra nyomva (Icon animáció forgó)Főoldal:
-SzabályzatPalyak
-Program
-Tortenet
-VersenyzokHirek
+Történelem oldalt spicyzd fel képekkel
