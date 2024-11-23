@@ -48,14 +48,48 @@
 /* Class-specific styles */
 .intro {
     background-color: rgba(255, 223, 186, 0.2); /* Light peach background */
+    text-align: center; /* Center the image and text */
 }
 
-.origin {
-    background-color: rgba(186, 223, 255, 0.2); /* Light blue background */
+.intro img {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image with margin below */
+    max-width: 80%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.origin, .milestones {
+    background-color: rgba(186, 223, 255, 0.2); /* Light blue background for origin */
+    display: flex;
+    align-items: center; /* Center the images vertically */
+}
+
+.origin img {
+    margin-right: 20px; /* Space between the image and text */
+    max-width: 40%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.origin .content, .milestones .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow the content to take up the remaining space */
 }
 
 .milestones {
-    background-color: rgba(186, 255, 200, 0.2); /* Light green background */
+    flex-direction: row-reverse; /* Align the image to the right */
+}
+
+.milestones img {
+    margin-left: 20px; /* Space between the image and text */
+    max-width: 40%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 .what-makes-special {

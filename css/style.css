@@ -102,6 +102,15 @@ body {
     margin-bottom: 15px;
 }
 
+.brighten img {
+    display: block;
+    margin: 0 auto;
+    width: 40%; /* Adjust the width to make the images smaller */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
 
 /*========Fő címek========*/
 .main-title {
@@ -524,8 +533,6 @@ form .checkbox label {
     animation: slideDown 0.5s ease-out;
 }
 
-/*========Táblázat========*/
-
 /*========Figyelemfelkeltő gomb========*/
 
 .call-to-action {
@@ -572,6 +579,18 @@ form .checkbox label {
     transform: scale(1.05);
 }
 
+/*========Versenyző képek========*/
+
+.contestant-photo {
+    display: block;
+    margin: 0 auto 10px auto; /* Center the image with margin below */
+    width: 50%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+
 /*================😶‍🌫️😶‍🌫️😶‍🌫️Animációk😶‍🌫️😶‍🌫️😶‍🌫️================*/
 
 @keyframes rotate {
@@ -615,7 +634,8 @@ form .checkbox label {
         100% { transform: scale(1); }
     }
 
-/* Media Queries for Mobile and Tablet view */
+/*================👾👾👾Reszponzivitás👾👾👾================*/
+
 @media (max-width: 1024px) {
     .quote-container {
         flex-direction: column; /* Stack items vertically */
