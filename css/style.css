@@ -220,6 +220,17 @@ ul {
     border-radius: 0 3px 3px 0;
 }
 
+.prev, .next, .dot-container, .numbertext {
+    display: none;
+}
+
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next,
+.slideshow-container:hover .dot-container,
+.slideshow-container:hover .numbertext{
+    display: block;
+}
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -774,6 +785,7 @@ form .checkbox label {
     }
     .prev, .next {
         padding: 8px;
+        top: 40%;
     }
 }
 
@@ -787,9 +799,13 @@ form .checkbox label {
     }
     .prev, .next {
         padding: 5px;
+        top: 35%;
     }
     .history p {
         font-size: 0.8em !important;
+    }
+    .dot-container {
+        padding: 0;
     }
 }
 
