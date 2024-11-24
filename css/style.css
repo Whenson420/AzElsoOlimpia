@@ -523,6 +523,14 @@ form .checkbox label {
     margin-left: 5px;
 }
 
+#jelentkezes-tipus option {
+    color: black;
+}
+
+#how-heard option{
+    color: black;
+}
+
 #message {
     display: none;
     position: fixed;
