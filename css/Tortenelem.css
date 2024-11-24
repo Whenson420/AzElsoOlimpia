@@ -149,7 +149,12 @@
         align-items: center;
         text-align: center;
     }
-
+    .history h2 {
+        font-size: 1.4em;
+    }
+    .history h3 {
+        font-size: 1.4em;
+    }
     .origin img,
     .milestones img,
     .what-makes-special img,
@@ -159,8 +164,16 @@
         margin: 0 0 20px 0; 
         max-width: 100%; 
     }
-
     .content {
         width: 100%; 
+    }
+}
+@media (max-width: 480px){
+    .history h2 {
+        font-size: 1em;
+    }
+
+    .history h3 {
+        font-size: 0.8em;
     }
 }
