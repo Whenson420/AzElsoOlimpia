@@ -49,3 +49,15 @@
     transform: scale(1.1);
     filter: brightness(1) invert(0);
 }
+
+@media (max-width: 768px) {
+    .sponsors{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors{
+        transform: scale(0.6);
+    }
+}

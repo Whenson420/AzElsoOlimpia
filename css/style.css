@@ -698,6 +698,16 @@ form .checkbox label {
     text-align: left;
 }
 
+.vote-button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: rgba(255, 206, 0, 0.66);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 /*========Karim története========*/
 .story-content {
     color: rgb(255, 255, 200);
@@ -897,8 +907,14 @@ form .checkbox label {
 }
 
 @media (max-width: 480px){
+    .news-item h4{
+        font-size: 1em;
+    }
+    .news-item p{
+        font-size: 0.6em;
+    }
     .main-title {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .main-quote {
         font-size: 1em;
@@ -941,5 +957,17 @@ form .checkbox label {
     .testimonial-author {
         font-size: 0.85em;
     }
+
+    .text-content p,
+    .text-content .quote,
+    .brighten p,
+    .cta-button{
+        font-size: 0.6em;
+    }
+    .brighten h4,
+    .call-to-action h2{
+        font-size: 1em;
+    }
+
 }
 
