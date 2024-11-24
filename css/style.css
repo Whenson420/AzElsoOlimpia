@@ -907,6 +907,9 @@ form .checkbox label {
 }
 
 @media (max-width: 480px){
+    .brighten h3{
+        font-size: 1em;
+    }
     .news-item h4{
         font-size: 1em;
     }
@@ -917,7 +920,7 @@ form .checkbox label {
         font-size: 1.5em;
     }
     .main-quote {
-        font-size: 1em;
+        font-size: 0.7em;
         padding: 10px;
     }
     .prev, .next {
@@ -949,7 +952,6 @@ form .checkbox label {
     .testimonial-content {
         padding: 10px;
     }
-
     .testimonial-quote {
         font-size: 0.9em;
     }
@@ -957,7 +959,6 @@ form .checkbox label {
     .testimonial-author {
         font-size: 0.85em;
     }
-
     .text-content p,
     .text-content .quote,
     .brighten p,
@@ -968,6 +969,5 @@ form .checkbox label {
     .call-to-action h2{
         font-size: 1em;
     }
-
 }
 
