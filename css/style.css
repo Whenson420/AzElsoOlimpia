@@ -680,6 +680,13 @@ form .checkbox label {
     left: 40px;
 }
 
+.versenypalyak p{
+    text-align: center;
+}
+
+.lazy p{
+    text-align: left;
+}
 
 /*================😶‍🌫️😶‍🌫️😶‍🌫️Animációk😶‍🌫️😶‍🌫️😶‍🌫️================*/
 
