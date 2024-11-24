@@ -1,3 +1,4 @@
+//Csapat mód kiválasztásakor megjelenjen egy új sor, ahova be lehet írni a csapatnevet
 function showTeamNameField() {
     var type = document.getElementById('jelentkezes-tipus').value;
     var teamNameField = document.getElementById('csapat-neve');
@@ -8,21 +9,21 @@ function showTeamNameField() {
     }
 }
 
+
+//Üzenet mutatása
 function showMessage() {
     var message = document.getElementById('message');
     message.style.display = 'block';
-
-    // Hide the message after 5 seconds
     setTimeout(function() {
         message.style.display = 'none';
     }, 5000);
 }
 
-// Handle form submission
+//Hogy ne Submiteljen a form
 document.getElementById('registration-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the form from submitting
-    showMessage(); // Displays the success message
+    event.preventDefault();
+    showMessage();
 });
 
-// Handle button click
+//Gombnyomáskor jöjjön elő az üzenet
 document.querySelector('.image-button').addEventListener('click', showMessage);

@@ -1,4 +1,4 @@
-
+//lenyitható menü
 function toggleNews() {
     var newsContent = document.querySelector('.news-content');
     var toggleButton = document.getElementById('toggle-news');
@@ -10,8 +10,7 @@ function toggleNews() {
     toggleButton.textContent = '▼';
 }
 }
-
-    // Initial state
+//oldal betöltésekor becsukva legyen a lenyitható hírek menü
     document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.news-content').style.display = 'none';
 });
