@@ -1,5 +1,4 @@
 .history {
-    font-family: 'Arial', sans-serif;
     line-height: 1.8;
     background-color: rgba(0, 0, 0, 0.46); 
     padding: 20px;
@@ -58,15 +57,15 @@
     max-width: 80%; 
     height: auto;
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.intro img:hover {
-    transform: scale(1.05); 
-}
-
-.origin, .milestones {
+.origin,
+.milestones,
+.what-makes-special,
+.evolution,
+.future,
+.closing {
     background-color: rgba(186, 223, 255, 0.2); 
     display: flex;
     align-items: center; 
@@ -76,7 +75,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.origin img {
+.origin img,
+.milestones img,
+.what-makes-special img,
+.evolution img,
+.future img,
+.closing img {
     margin: 0 20px; 
     max-width: 40%; 
     height: auto;
@@ -84,22 +88,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-.origin .content, .milestones .content {
+.origin .content,
+.milestones .content,
+.what-makes-special .content,
+.evolution .content,
+.future .content,
+.closing .content {
     display: flex;
     flex-direction: column;
     flex: 1; 
 }
 
-.milestones {
+.milestones,
+.evolution,
+.closing {
     flex-direction: row-reverse; 
-}
-
-.milestones img {
-    margin: 0 20px;  
-    max-width: 40%; 
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .what-makes-special {
@@ -119,18 +122,28 @@
 }
 
 @media (max-width: 768px) {
-    .origin, .milestones {
+    .origin,
+    .milestones,
+    .what-makes-special,
+    .evolution,
+    .future,
+    .closing {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .origin img, .milestones img {
+    .origin img,
+    .milestones img,
+    .what-makes-special img,
+    .evolution img,
+    .future img,
+    .closing img{
         margin: 0 0 20px 0; 
         max-width: 100%; 
     }
 
-    .origin .content, .milestones .content {
+    .content {
         width: 100%; 
     }
 }
