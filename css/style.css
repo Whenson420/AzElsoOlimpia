@@ -781,5 +781,8 @@ form .checkbox label {
     .prev, .next {
         padding: 5px;
     }
+    .history p {
+        font-size: 0.8em !important;
+    }
 }
 

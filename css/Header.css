@@ -82,7 +82,7 @@ nav {
 }
 
 header.sticky nav {
-    margin: 10px 0;
+    margin: 0;
 }
 
 nav a {
@@ -175,7 +175,7 @@ header.sticky .scroll-down {
         cursor: pointer;
         display: block;
         position: absolute;
-        top: 20px;
+        padding-right: 20px;
         right: 20px;
     }
 
@@ -231,14 +231,5 @@ header.sticky .scroll-down {
     .fejléc {
         width: 95%;
         height: 95%;
-    }
-
-    header.sticky h1 {
-        font-size: 1.2em;
-        margin-bottom: 0;
-        margin-top: 0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
